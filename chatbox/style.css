@@ -1,0 +1,205 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+
+	background: url(images/grid.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.container{
+	width: 450px;
+	min-width: 390px;
+	height: 600px;
+	background: #ffffff;
+	padding: 25px;
+	margin: 20px auto;
+	box-shadow: 0 3px #ccc;
+}
+
+
+
+.chatlogs{
+	padding: 10px;
+	width: 100%;
+	height: 450px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.chatlogs::-webkit-scrollbar{
+	width: 10px;
+}
+
+.chatlogs::-webkit-scrollbar-thumb{
+	border-radius: 5px;
+	background: #d4d1d1;
+}
+
+
+.chat{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	margin-bottom: 10px;
+} 
+
+.chat .user-photo{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+.chat .user-photo{
+	width: 100%;
+}
+
+.chat .chat-message{
+	width: 100%;
+	padding: 8px;
+	margin: 5px 10px 0px;
+	border-radius: 10px;
+	border-color: #2980b9;
+	color: #fff;
+	font-size: 18px;
+
+}
+
+.chat .chat-message{
+	background: #3498b4;
+}
+
+.chat-form{
+	margin-top: 20px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.chat-form textarea{
+    background: #fbfbfb;
+    width: 75%;
+    height: 70px;
+    margin-left: 6px;
+    border: 1px solid #cdc8c8;
+    border-radius: 3px;
+    resize: none;
+    font-size: 16px;
+    color: #999;
+
+}
+
+.chat-form textarea::-webkit-scrollbar{
+	width: 5px;
+}
+
+.chat-form textarea::-webkit-scrollbar-thumb{
+	border-radius: 5px;
+	background: #d4d1d1;
+}
+
+.chat-form button{
+	background: #2ecc71;
+	padding: 5px 15px;
+	color: #fff;
+	border: none;
+	margin: 0 3px;
+	border-radius: 3px;
+	box-shadow: 0 3px 0 #27a360;
+}
+
+.chat-form .logout_button{
+	background: #c87600;
+	padding: 5px 5px;
+	font-size: 20px;
+	color: #fff;
+	border: none;
+	margin: 0 2px;
+	box-shadow: 0 3px 0 #c87600;
+	text-decoration: none;
+}
+
+
+/* Login/Registration css*/
+
+.login-box{
+    width: 350px;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 45%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 45px 30px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"], input[type="file"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #0eb2c1;
+    color: #000;
+}
+
+.login-box p{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box a:hover
+{
+    color: #0eb2c1;
+}
+
+
+
+
+
+
+
+
